@@ -1,0 +1,22 @@
+{
+  "name": "target-api",
+  "version": "0.0.1",
+  "description": "Very limited abstraction over Target APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musocrat/target-api.git"
+  },
+  "author": "Andrew Carpenter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/musocrat/target-api/issues"
+  },
+  "homepage": "https://github.com/musocrat/target-api#readme",
+  "dependencies": {
+    "xml2js": "^0.4.17"
+  }
+}
