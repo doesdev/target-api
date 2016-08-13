@@ -32,7 +32,12 @@ module.exports.stores = (opts, cb) => {
 }
 
 module.exports.search = (opts, cb) => {
-  let query = `searchTerm=${opts.query}`
+  let params = {
+    searchTerm: opts.query || opts.searchTerm,
+    pageNumber: opts.page || opts.pageNumber || 1,
+    limit: opts.limit || 20
+  }
+  let query = qs.stringify(params)
   let body = ''
   let reqOpts = {
     hostname: apiV1Host,

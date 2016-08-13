@@ -18,9 +18,9 @@ const targetApi = require('target-api')
 
 // get array of stores
 const storesOpts = {key: 'someV2ApiKey', nearby: 33803, range: 50, limit: 50}
-targetApi.stores(storesOpts, console.log)
+targetApi.stores(storesOpts, (err, data) => console.log(err || data))
 
 // get product search results
 const searchOpts = {key: 'someV1ApiKey', store: 1299, query: '4k tv'}
-targetApi.search(searchOpts, console.log)
+targetApi.search(searchOpts, (err, data) => console.log(err || data))
 ```

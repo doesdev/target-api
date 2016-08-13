@@ -1,6 +1,6 @@
 {
   "name": "target-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Very limited abstraction over Target APIs",
   "main": "index.js",
   "scripts": {
